@@ -1,0 +1,10 @@
+:root {
+  --Netflix-Red: #E50914;
+  --Netflix-DarkGrey: #2C2C2C;
+}
+
+body {
+  background-color: var(--Netflix-DarkGrey);
+  margin: 0;
+  padding: 0;
+}

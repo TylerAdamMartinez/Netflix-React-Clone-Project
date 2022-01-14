@@ -1,0 +1,34 @@
+:root {
+  --Netflix-Red: #e50914;
+  --Netflix-DarkGrey: #2c2c2c;
+}
+
+.Banner h1,
+.Banner p {
+  color: white;
+}
+
+.Banner img {
+  height: auto;
+  width: 100%;
+}
+
+.Banner .Banner_btns {
+  display: flex;
+  gap: 5px;
+}
+
+.Banner .Banner_btns button {
+  background-color: var(--Netflix-DarkGrey);
+  color: white;
+}
+
+.Banner .Banner_btns button:focus {
+  background-color: var(--Netflix-Red);
+  color: white;
+}
+
+.BannerDetail {
+  padding: 15px;
+  transform: translateY(-300px);
+}
