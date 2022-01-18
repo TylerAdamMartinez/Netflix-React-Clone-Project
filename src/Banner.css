@@ -63,3 +63,13 @@
   background-color: var(--Netflix-Red);
   color: white;
 }
+
+.banner--fadeBottom {
+  height: 15rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(44, 44, 44, 0.85),
+    var(--Netflix-DarkGrey)
+  );
+}

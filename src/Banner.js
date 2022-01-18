@@ -34,6 +34,7 @@ const Banner = () => {
                 </div>                
             </div>
 
+            <div className="banner--fadeBottom"></div>
         </header>
     )
 };
