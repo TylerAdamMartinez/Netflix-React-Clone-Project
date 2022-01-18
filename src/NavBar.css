@@ -12,6 +12,9 @@
   align-items: center;
   justify-content: left;
   gap: 15px;
+
+  transition-timing-function: ease-in;
+  transition: all 0.75s;
 }
 
 .no-background-color {

@@ -69,7 +69,7 @@
   background-image: linear-gradient(
     180deg,
     transparent,
-    rgba(44, 44, 44, 0.85),
+    rgba(44, 44, 44, 0.9),
     var(--Netflix-DarkGrey)
   );
 }

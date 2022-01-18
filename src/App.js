@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import './App.css';
 import requests from './request';
 import NavBar from './NavBar';
