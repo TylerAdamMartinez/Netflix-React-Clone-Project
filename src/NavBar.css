@@ -1,0 +1,36 @@
+:root {
+  --Netflix-Red: #e50914;
+  --Netflix-DarkGrey: #2c2c2c;
+}
+
+.navBar {
+  top: 0;
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 15px;
+}
+
+.no-background-color {
+  background-color: transparent;
+}
+
+.background-color {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.navBar img {
+  padding: 15px;
+  padding-right: 0;
+}
+
+.navBar ul li {
+  text-decoration: none;
+  list-style-type: none;
+  display: inline;
+  padding: 15px;
+  color: white;
+}
