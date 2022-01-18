@@ -3,14 +3,34 @@
   --Netflix-DarkGrey: #2c2c2c;
 }
 
+.Banner {
+  background-size: cover;
+  background-position: center center;
+  object-fit: contain;
+  height: 750px;
+}
+
 .Banner h1,
 .Banner p {
   color: white;
 }
 
-.Banner img {
-  height: auto;
-  width: 100%;
+.BannerDetail {
+  margin-left: 30px;
+  padding-top: 325px;
+  height: 200px;
+}
+
+.BannerDetail h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 5px;
+}
+
+.BannerOverview {
+  width: 45rem;
+  padding-top: 5px;
+  font-weight: 0.8rem;
 }
 
 .Banner .Banner_btns {
@@ -21,14 +41,25 @@
 .Banner .Banner_btns button {
   background-color: var(--Netflix-DarkGrey);
   color: white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.Banner .Banner_btns button:hover {
+  background-color: #e6e6e6;
+  color: black;
 }
 
 .Banner .Banner_btns button:focus {
   background-color: var(--Netflix-Red);
   color: white;
-}
-
-.BannerDetail {
-  padding: 15px;
-  transform: translateY(-300px);
 }

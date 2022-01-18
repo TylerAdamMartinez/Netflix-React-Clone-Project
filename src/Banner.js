@@ -6,19 +6,16 @@ import "./Banner.css";
 
 const Banner = () => {
     const imgBaseURL = "https://image.tmdb.org/t/p/original/";
-    const title = "title";
-    const description = "lorem";
-
     const [movieBanner, setMovieBanner] = useState([]);
 
     useEffect(() => {
         const fetchMovieBannerData = async() => {
-            const getRandomInt = (max) => {
-                return Math.floor(Math.random() * max);
-            };
-            let randomMovie = getRandomInt(10);
-
             const requestMovieBannerData = await tmdbApiRequestInstance.get(requests.fetchNetflixOriginals);
+            const getRandomInt = () => {
+                return Math.floor(Math.random() * requestMovieBannerData.data.results.length - 1);
+            };
+            let randomMovie = getRandomInt();
+
             setMovieBanner(requestMovieBannerData.data.results[randomMovie]); 
         };
 
@@ -26,13 +23,11 @@ const Banner = () => {
     }, []);
 
     return (
-        <header className="Banner">
-            <img 
-                src={`${imgBaseURL}${movieBanner.backdrop_path}`}
-                alt={`${movieBanner.name}`}/>
+        <header className="Banner" 
+            style={{ backgroundImage: `url(${imgBaseURL}${movieBanner?.backdrop_path})`, }} >
             <div className="BannerDetail">
-                <h1>{movieBanner.name}</h1>
-                <p>{movieBanner.overview}</p>
+                <h1>{ movieBanner?.name || movieBanner?.title }</h1>
+                <p className="BannerOverview">{ movieBanner?.overview }</p>
                 <div className="Banner_btns">
                     <button>Play</button>
                     <button>More Info</button>
